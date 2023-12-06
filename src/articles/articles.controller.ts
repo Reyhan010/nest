@@ -21,7 +21,7 @@ export class ArticlesController {
   findAll() {
     return this.articlesService.findAll();
   }
-  
+
   @Get('drafts')
   @ApiOkResponse({ type: ArticleEntity, isArray: true })
   findDrafts() {
